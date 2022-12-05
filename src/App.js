@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./Pages/Home";
+import Photos from "./Pages/Photos";
+import Illustration from "./Pages/Illustration";
+import Vector from "./Pages/Vector";
+import Video from "./Pages/Video";
+import Music from "./Pages/Music";
+import Sound from "./Pages/Sound";
+import Gifs from "./Pages/Gifs"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/photos" element={<Photos />} />
+                <Route path="/illustrations" element={<Illustration />} />
+                <Route path="/vectors" element={<Vector />} />
+                <Route path="/videos" element={<Video />} />
+                <Route path="/music" element={<Music />} />
+                <Route path="/sound-effects" element={<Sound />} />
+                <Route path="/gifs" element={<Gifs />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
-
-export default App;
