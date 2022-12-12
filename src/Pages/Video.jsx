@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../components/Containers/Container";
-import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Note from "../components/Note/Note";
-import Slider from "../components/Sliders/Slider";
 import { Helmet } from "react-helmet";
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
+import SlideVideo from "../components/Sliders/SliderVideo";
 
 export default function Video() {
     return (
@@ -20,8 +20,8 @@ export default function Video() {
                 note="Kho video miễn phí với hàng ngàn video clip được chia sẻ bởi cộng đồng tài năng của chúng tôi."
                 search="Video"
             />
-            <Content />
-            <Slider />
+            <NavigationBar />
+            <SlideVideo />
             <Note />
             <Footer />
         </>

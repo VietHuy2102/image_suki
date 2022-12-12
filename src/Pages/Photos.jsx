@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../components/Containers/Container";
-import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Note from "../components/Note/Note";
-import Slider from "../components/Sliders/Slider";
 import {Helmet} from "react-helmet"
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
+import SlidePhoto from "../components/Sliders/SlidePhoto";
 
 export default function Photos() {
     return (
@@ -20,8 +20,8 @@ export default function Photos() {
                 note="Kho ảnh đẹp miễn phí với hơn 1 triệu ảnh và video được chia sẻ bởi cộng đồng tài năng của chúng tôi."
                 search="Ảnh"
             />
-            <Content />
-            <Slider />
+            <NavigationBar />
+            <SlidePhoto />
             <Note />
             <Footer />
         </>

@@ -1,11 +1,12 @@
 import React from "react";
 import Container from "../components/Containers/Container";
-import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Note from "../components/Note/Note";
-import Slider from "../components/Sliders/Slider";
+
 import {Helmet} from "react-helmet"
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
+import SlideIllustration from "../components/Sliders/SlideIllustration";
 
 export default function Illustration() {
     return (
@@ -20,8 +21,8 @@ export default function Illustration() {
                 note="Kho illustration miễn phí với hơn 160,000 hình ảnh minh hoạ được chia sẻ bởi cộng đồng tài năng của chúng tôi."
                 search="Minh họa"
             />
-            <Content />
-            <Slider />
+            <NavigationBar />
+            <SlideIllustration />
             <Note />
             <Footer />
         </>

@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../components/Containers/Container";
-import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Note from "../components/Note/Note";
-import Slider from "../components/Sliders/Slider";
 import {Helmet} from "react-helmet"
+import { NavigationBar } from "../components/NavigationBar/NavigationBar";
+import SlideVector from "../components/Sliders/SlideVector";
 export default function Vector() {
     return (
         <>
@@ -19,8 +19,8 @@ export default function Vector() {
                 note="Kho vector miễn phí với hơn 70,000 hình ảnh vector được chia sẻ bởi cộng đồng tài năng của chúng tôi."
                 search="Vectors"
             />
-            <Content />
-            <Slider />
+            <NavigationBar />
+            <SlideVector />
             <Note />
             <Footer />
         </>
